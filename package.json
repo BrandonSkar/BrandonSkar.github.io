@@ -1,6 +1,5 @@
 {
   "name": "mk64-app",
-  "homepage": "https://brandonskar.github.io/mk64-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -22,6 +21,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "homepage": "https://brandonskar.github.io/mario-kart-shortcuts",
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -39,5 +39,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }

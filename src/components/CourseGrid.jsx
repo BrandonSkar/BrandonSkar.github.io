@@ -6,9 +6,9 @@ export default function CourseGrid() {
     return (
         <div className="course-grid">
             {courses.map(c => (
-                <Link key={c.code} to={`/mk64/${c.code}`}>
+                <Link key={c.code} to={`#/${c.code}`}>
                     <img
-                        src={`/assets/map-images/${c.code}-course.png`}
+                        src={`${process.env.PUBLIC_URL}/assets/map-images/${c.code}-course.png`}
                         alt={c.name}
                     />
                 </Link>

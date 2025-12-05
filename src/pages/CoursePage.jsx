@@ -10,9 +10,8 @@ export default function CoursePage() {
     return (
         <div style={{ padding: "20px" }}>
             <h1>{course.name}</h1>
-
             <img
-                src={`/assets/map-images/${course.code}-course.png`}
+                src={`${process.env.PUBLIC_URL}/assets/map-images/${course.code}-course.png`}
                 alt={course.name}
                 style={{ maxWidth: "500px", width: "100%", borderRadius: "8px" }}
             />
