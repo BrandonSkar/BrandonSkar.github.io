@@ -1,0 +1,113 @@
+.course-page {
+    width: 100%;
+    margin-left: 262px;
+	padding: 20px;
+	font-family: Arial, sans-serif;
+	position: relative;
+}
+
+.course-image {
+	width: 100%;
+	max-width: 300px;
+	border-radius: 8px;
+	margin-bottom: 20px;
+	object-fit: cover;
+}
+
+.shortcut-selector {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 20px;
+}
+
+.shortcut-selector button {
+	padding: 10px 20px;
+	border: 2px solid #0077cc;
+	background-color: white;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.2s, color 0.2s;
+}
+
+.shortcut-selector button.active {
+	background-color: #0077cc;
+	color: white;
+    font-weight: bold;
+}
+
+.shortcut-pages {
+	position: relative;
+	min-height: 150px; /* reserve space for content so layout doesn't jump */
+}
+
+.shortcut-page {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	opacity: 0;
+	transition: opacity 0.5s;
+	pointer-events: none; /* prevents interaction with hidden content */
+}
+
+.shortcut-page.fade-in {
+	opacity: 1;
+	pointer-events: auto; /* allows interaction with visible content */
+}
+
+.jp-exclaimer {
+	color: #cc3300;
+	font-weight: bold;
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+}
+
+/* Tooltip placeholder styles (adjust inside Tooltip component as needed) */
+.jp-exclaimer img {
+	width: 24px;
+	height: 24px;
+	object-fit: cover;
+	border-radius: 4px;
+}
+
+/* PAGE WRAPPER */
+.layout-wrapper {
+	display: flex;
+	align-items: flex-start;
+}
+
+/* LEFT NAV BAR */
+.course-nav {
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 220px;
+	padding: 20px;
+	border-right: 2px solid #ddd;
+	overflow-y: auto;
+}
+
+.nav-item {
+	display: block;
+	padding: 10px 15px;
+	margin-bottom: 5px;
+	border-radius: 6px;
+	text-decoration: none;
+	color: white;
+	font-weight: 500;
+	transition: background 0.2s;
+}
+
+.nav-item:hover {
+	background: #011B24;
+}
+
+.nav-item.active {
+	background: #0077cc;
+	color: white;
+	font-weight: bold;
+	cursor: default;
+	pointer-events: none;
+}
