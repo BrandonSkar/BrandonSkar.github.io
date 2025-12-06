@@ -59,12 +59,18 @@ export default function TrackPage({ course }) {
 	const shortcuts = shortcutMap[course.code] || { na: [], jp: [] };
 	const hasJPN = course.hasJPN;
 
-	const currentList = shortcuts[selectedSet] || [];
+	const currentList = React.useMemo(() => {
+		// Put ALL the logic inside the memo
+		const list = shortcuts?.[selectedSet];
+		return list || [];
+	}, [shortcuts, selectedSet]);
 
 	// Set first shortcut as active by default
 	React.useEffect(() => {
-		if (currentList.length > 0) setActiveShortcutId(currentList[0].id);
-	}, [selectedSet, course.code]);
+		if (currentList.length > 0) {
+			setActiveShortcutId(currentList[0].id);
+		}
+	}, [selectedSet, course.code, currentList]);
 
 	const activeShortcut = currentList.find((s) => s.id === activeShortcutId);
 
@@ -85,43 +91,64 @@ export default function TrackPage({ course }) {
 
 			{/* MAIN CONTENT */}
 			<div className="course-page">
-				<img
-					src={`${process.env.PUBLIC_URL}/assets/map-images/${course.code}-course.png`}
-					alt={course.name}
-					className="course-image"
-				/>
+				<div className="top-section">
+					<div className="left">
+						<img
+							src={`${process.env.PUBLIC_URL}/assets/map-images/${course.code}-course.png`}
+							alt={course.name}
+							className="course-image"
+						/>
 
-				{/* Shortcut Set Selector */}
-				
-				<div className="shortcut-selector">
-					<button
-						className={selectedSet === "na" ? "active" : ""}
-						onClick={() => setSelectedSet("na")}
-					>
-						NA / PAL Shortcuts
-					</button>
-					{hasJPN && <button
-						className={selectedSet === "jp" ? "active" : ""}
-						onClick={() => setSelectedSet("jp")}
-					>
-						{course.code === "LR"
-							? "JP 1.0 or JP 1.1 Required"
-							: "JP 1.0 Required"}
-					</button>}
-				</div>
-				
+						{/* Shortcut Set Selector */}
+						
+						<div className="shortcut-selector">
+							<button
+								className={selectedSet === "na" ? "active" : ""}
+								onClick={() => setSelectedSet("na")}
+							>
+								NA / PAL Shortcuts
+							</button>
+							{hasJPN && <button
+								className={selectedSet === "jp" ? "active" : ""}
+								onClick={() => setSelectedSet("jp")}
+							>
+								{course.code === "LR"
+									? "JP 1.0 or JP 1.1 Required"
+									: "JP 1.0 Required"}
+							</button>}
+						</div>
+						
 
-				{/* Shortcut Buttons */}
-				<div className="shortcut-buttons">
-					{currentList.map((s) => (
-						<button
-							key={s.id}
-							className={s.id === activeShortcutId ? "active" : ""}
-							onClick={() => setActiveShortcutId(s.id)}
-						>
-							{s.title}
-						</button>
-					))}
+						{/* Shortcut Buttons */}
+						<div className="shortcut-buttons">
+							{currentList.map((s) => (
+								<button
+									key={s.id}
+									className={s.id === activeShortcutId ? "active" : ""}
+									onClick={() => setActiveShortcutId(s.id)}
+								>
+									{s.title}
+								</button>
+							))}
+						</div>
+					</div>
+
+					{activeShortcut?.resources && <div className="right">
+						<h1 className="title">Resources</h1>
+						<div className="resource-container">
+							{activeShortcut.resources.map((r, i) => (
+								<a
+									key={r.link}
+									href={r.link}
+									target="_blank"
+									rel="noopener noreferrer"
+									className="resource"
+								>
+									{r.label}
+								</a>
+							))}
+						</div>
+					</div>}
 				</div>
 
 				{selectedSet === "jp" && hasJPN && (
@@ -163,7 +190,7 @@ export default function TrackPage({ course }) {
 									{activeShortcut.id && <li className="item list-item">{step.title}</li>}
 									{step.images && <div className="image-container">
 										{step.images.map((image, i) => (
-											<img key={i} src={image} onClick={() => openModal(image)} alt={`Step ${i + 1}`} className="item image" />
+											<img key={image} src={image} onClick={() => openModal(image)} alt={`Step ${i + 1}`} className="item image" />
 										))}
 									</div>}
 									{step.snipClips && <div className="snip-container">
@@ -174,16 +201,16 @@ export default function TrackPage({ course }) {
 											</video>
 										))}
 									</div>}
-									{step.links && <div className="links-container">
+									{step.links && <div className="item links-container">
 										{step.links.map((link, i) => (
 											<a
-												key={i}
-												href={link}
+												key={link.link}
+												href={link.link}
 												target="_blank"
 												rel="noopener noreferrer"
-												className="item link"
+												className="link"
 											>
-												{link}
+												{link.label}
 											</a>
 										))}
 									</div>}

@@ -2,8 +2,8 @@ export const KTB_shortcuts = {
 	na: [
 		{
 			id: null,
-			title: "Nothing To See Here",
-			description: "Nothing for this track",
+			title: "Water you doing here?",
+			description: "Crabsolutely Nothing to See Here",
 			steps: [
 				{
 					snipClips: [
