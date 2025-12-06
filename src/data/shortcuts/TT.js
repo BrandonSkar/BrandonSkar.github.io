@@ -3,7 +3,7 @@ export const TT_shortcuts = {
         {
             id: "shortcut-1",
             title: "TTC Shortcut",
-            description: "Jump off the upper ramp to save time.",
+            description: "TT SC",
             steps: []
         },
     ],
@@ -11,7 +11,7 @@ export const TT_shortcuts = {
         {
             id: "jp-ttc",
             title: "TTC JP Shortcut",
-            description: "JP physics make this cut more consistent.",
+            description: "TT JP SC",
             steps: []
         },
     ],

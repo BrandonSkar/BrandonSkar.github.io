@@ -2,7 +2,7 @@ export const LR_shortcuts = {
     na: [
         {
             id: "wall-jump",
-            title: "Wall Jump Shortcut",
+            title: "Wall Jump",
             description: "Jump over the left wall just after the tunnel",
             steps: [
                 {
@@ -24,7 +24,7 @@ export const LR_shortcuts = {
         },
         {
             id: "myle-style",
-            title: "Myle Style Shortcut",
+            title: "Myle Style",
             description: "Harder than Wall Jump but faster.\nJump over the wall from the sand immediately after the tunnel",
             steps: [
                 {
@@ -46,7 +46,7 @@ export const LR_shortcuts = {
     jp: [
         {
             id: "wall-bounce",
-            title: "3lap and flap Wall Bounce",
+            title: "Wall Bounce",
             description: "Being at some very precise distances from the wall\nand hitting it just right will allow you to skip the whole track",
             steps: [
                 {
@@ -70,8 +70,24 @@ export const LR_shortcuts = {
             ]
         },
         {
+            id: "setup-flap",
+            title: "Setup flap",
+            description: "You can do a wall bounce set up to get a sub 1 second flap",
+            steps: [
+                {
+                    title: "Drive around the track but do not cross the finish line",
+                },
+                {
+                    title: "It doesn't have to be perfect, but try to get as close as you can to being aligned with the image",
+                    images: [
+                        `${process.env.PUBLIC_URL}/assets/images/LR/LR-flap-setup.png`
+                    ],
+                }
+            ]
+        },
+        {
             id: "LR01",
-            title: "LR 0.1 / 0.2 Shortcut",
+            title: "LR 0.1 flap",
             description: "A flap of 0.01 or 0.02 seconds\nThis shortcut requires 'Cruise Control' (CC)\n" +
             "Where you hold up and very slightly push left on the joystick and press L + R + Start to reset the neutral position of the joystick\n" +
             "So that the neutral position is down and very slightly right",

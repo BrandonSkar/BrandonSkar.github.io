@@ -3,7 +3,7 @@ export const DKJP_shortcuts = {
 		{
 			id: "jungle-cut",
 			title: "DK Jungle Parkway Shortcut",
-			description: "Drive over the grass to skip the first turn.",
+			description: "Tunnel cut",
 			steps: []
 		},
 	],

@@ -3,7 +3,7 @@ export const RRd_shortcuts = {
 		{
 			id: "rainbow-cut",
 			title: "Rainbow Road Shortcut",
-			description: "Jump over the rails to cut corners.",
+			description: "Big Jump",
 			steps: []
 		},
 	],

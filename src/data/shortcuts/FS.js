@@ -3,7 +3,7 @@ export const FS_shortcuts = {
 		{
 			id: "shortcut-1",
 			title: "Frappe Snowland Shortcut",
-			description: "Use the ice patch to cut the turn.",
+			description: "OOB SC",
 			steps: []
 		},
 	],

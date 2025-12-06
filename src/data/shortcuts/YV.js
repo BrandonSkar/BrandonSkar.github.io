@@ -3,7 +3,7 @@ export const YV_shortcuts = {
 		{
 			id: "valley-cut",
 			title: "Yoshi Valley Shortcut",
-			description: "Take the upper path to bypass karts.",
+			description: "Valley Jump",
 			steps: []
 		},
 	],
