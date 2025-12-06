@@ -92,24 +92,24 @@ export default function TrackPage({ course }) {
 				/>
 
 				{/* Shortcut Set Selector */}
-				{hasJPN && (
-					<div className="shortcut-selector">
-						<button
-							className={selectedSet === "na" ? "active" : ""}
-							onClick={() => setSelectedSet("na")}
-						>
-							NA Shortcuts
-						</button>
-						<button
-							className={selectedSet === "jp" ? "active" : ""}
-							onClick={() => setSelectedSet("jp")}
-						>
-							{course.code === "LR"
-								? "JP 1.0 or JP 1.1 Required"
-								: "JP 1.0 Required"}
-						</button>
-					</div>
-				)}
+				
+				<div className="shortcut-selector">
+					<button
+						className={selectedSet === "na" ? "active" : ""}
+						onClick={() => setSelectedSet("na")}
+					>
+						NA / PAL Shortcuts
+					</button>
+					{hasJPN && <button
+						className={selectedSet === "jp" ? "active" : ""}
+						onClick={() => setSelectedSet("jp")}
+					>
+						{course.code === "LR"
+							? "JP 1.0 or JP 1.1 Required"
+							: "JP 1.0 Required"}
+					</button>}
+				</div>
+				
 
 				{/* Shortcut Buttons */}
 				<div className="shortcut-buttons">
