@@ -7,7 +7,7 @@ export const KD_shortcuts = {
 			steps: [
 				{
 					title: "Align yourself with the image. Look for the sand pattern highlighted\n" +
-					"Tip: From the beginning back up 2.1 seconds, do 3 fully charged left hops and reverse and you should end up next to the pattern",
+					"TIP: From the beginning back up 2.1 seconds, do 3 fully charged left hops and reverse and you should end up next to the pattern",
 					images: [
 						`${process.env.PUBLIC_URL}/assets/images/KD/KD-pattern.png`,
 						`${process.env.PUBLIC_URL}/assets/images/KD/KD-pattern-mark.png`

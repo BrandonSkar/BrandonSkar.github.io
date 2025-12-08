@@ -3,7 +3,7 @@ export const SL_shortcuts = {
 		{
 			id: "ice-cut",
 			title: "SL SC",
-			description: "SL SC",
+			description: "There is a shortcut but not important right now. Will update later",
 			steps: []
 		},
 	],

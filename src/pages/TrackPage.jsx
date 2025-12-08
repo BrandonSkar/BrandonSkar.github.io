@@ -190,8 +190,8 @@ export default function TrackPage({ course }) {
 				{/* Active Shortcut Display */}
 				{activeShortcut && (
 					<div className="shortcut-details">
-						<h2>{activeShortcut.title}</h2>
-						<p className="description">{activeShortcut.description}</p>
+						<h1>{activeShortcut.title}</h1>
+						<h3 className="description">{activeShortcut.description}</h3>
 						<ol className="list-container">
 							{activeShortcut.steps.map(step => (
 								<div className="item-container">

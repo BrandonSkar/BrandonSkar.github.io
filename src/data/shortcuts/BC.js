@@ -1,10 +1,14 @@
 export const BC_shortcuts = {
 	na: [
 		{
-			id: "castle-cut",
+			id: "stair-clip",
 			title: "Stair Clip",
-			description: "Stair clip",
-			steps: []
+			description: "Stair clip, will add this later",
+			steps: [
+				{
+
+				}
+			]
 		},
 	],
 };

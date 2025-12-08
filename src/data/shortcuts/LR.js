@@ -122,7 +122,7 @@ export const LR_shortcuts = {
                 {
                     title: "Press B for 229 frames\n" +
                     "183 bpm Metronome for 24.5 beats\n" +
-                    "Tip: Start at 1 when you press B, count to 8 3 times and release half way between the last 8 and the next beat",
+                    "TIP: Start at 1 when you press B, count to 8 3 times and release half way between the last 8 and the next beat",
                     snipClips: [
                         `${process.env.PUBLIC_URL}/assets/videos/LR/LR01-backup.mp4`
                     ],

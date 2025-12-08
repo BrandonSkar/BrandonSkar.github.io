@@ -1,3 +1,5 @@
+// TODO: Make tutorial on the quick flap
+
 export const CM_shortcuts = {
 	na: [
 		{
