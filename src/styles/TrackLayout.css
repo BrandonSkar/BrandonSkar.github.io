@@ -61,7 +61,8 @@
 
 .course-image {
 	width: 100%;
-	max-width: 300px;
+	min-width: 300px;
+	max-width: 500px;
 	border-radius: 8px;
 	margin-bottom: 20px;
 	object-fit: cover;

@@ -73,7 +73,8 @@ export const TT_shortcuts = {
             id: "fence-clip",
             title: "JP Fence Clip",
             description: "Jumping out of bounds and using Lakitu Effect to get 3lap and flap\n" +
-            "There are many ways to do this trick so I'll explain my 3lap that I think is the easiest to do (Check Resources for Full Video)",
+            "There are many ways to do this trick so I'll explain my 3lap that I think is the easiest to do (Check Resources for Full Video)\n" +
+            "NOTE: Lakitu Effect - After Lakitu puts you down he will not pick you up again for about 1.6 seconds so you're able to drive out of bounds freely in that time",
             steps: [
                 {
                     title: "Turn around at the beginning to about the 5th white line behind the finish line and jump out of bounds"

@@ -107,22 +107,22 @@ export default function TrackPage({ course }) {
 
 						{/* Shortcut Set Selector */}
 						
-						<div className="shortcut-selector">
+						{hasJPN && <div className="shortcut-selector">
 							<button
 								className={selectedSet === "na" ? "active" : ""}
 								onClick={() => setSelectedSet("na")}
 							>
 								NA / PAL Shortcuts
 							</button>
-							{hasJPN && <button
+							<button
 								className={selectedSet === "jp" ? "active" : ""}
 								onClick={() => setSelectedSet("jp")}
 							>
 								{course.code === "LR"
 									? "JP 1.0 or JP 1.1 Required"
 									: "JP 1.0 Required"}
-							</button>}
-						</div>
+							</button>
+						</div>}
 						
 
 						{/* Shortcut Buttons */}
@@ -190,7 +190,7 @@ export default function TrackPage({ course }) {
 					<div className="shortcut-details">
 						<h2>{activeShortcut.title}</h2>
 						<p className="description">{activeShortcut.description}</p>
-						<ul className="list-container">
+						<ol className="list-container">
 							{activeShortcut.steps.map(step => (
 								<div className="item-container">
 									{activeShortcut.id && <li className="item list-item">{step.title}</li>}
@@ -223,7 +223,7 @@ export default function TrackPage({ course }) {
 
 								</div>
 							))}
-						</ul>
+						</ol>
 					</div>
 				)}
 			</div>
