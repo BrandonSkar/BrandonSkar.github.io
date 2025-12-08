@@ -13,9 +13,9 @@ export const RRd_shortcuts = {
 			]
 		},
 		{
-			id: "quick-long",
-			title: "Quick Long Jump",
-			description: "Quick Long Jump",
+			id: "quick-3lap",
+			title: "Quick 3lap",
+			description: "Quick 3lap",
 			steps: [
 				{
 					title: "At the beginning, back up against the right wall"
