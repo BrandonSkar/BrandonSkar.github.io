@@ -137,7 +137,7 @@ export const FS_shortcuts = {
 				},
 				{
 					title: "Now the hard part... fully charge right on the joystick\n" +
-					"hold A and when you reach the snow bank where the main road meets the snow\," +
+					"hold A and when you reach the snow bank where the main road meets the snow\n," +
 					"swap from holding A to holding B on the same frame\n" +
 					"TIP: Use 2 hands, your right thumb holds A and then your left thumb holds B so you can let go of A and start holding B on the same frame\n" +
 					"Look for the ' in the time to be just right of the finish line like in the image",
@@ -187,6 +187,10 @@ export const FS_shortcuts = {
 				{
 					label: "Converter for EverDrive / DexDrive",
 					link: "https://beckabney.com/mk64/mempak.php"
+				},
+				{
+					label: "Brandon Skar 4\"25 Twitch",
+					link: "https://www.twitch.tv/videos/2238455114"
 				}
 			]
 		}

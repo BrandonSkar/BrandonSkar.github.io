@@ -57,7 +57,9 @@ export default function TrackPage({ course }) {
 		setModalOpen(true);
 	};
 
-	const shortcuts = shortcutMap[course.code] || { na: [], jp: [] };
+	const shortcuts = React.useMemo(() => {
+		return shortcutMap[course.code] || { na: [], jp: [] };
+	}, [course.code]);
 	const hasJPN = course.hasJPN;
 
 	const currentList = React.useMemo(() => {
