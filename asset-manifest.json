@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/mario-kart-shortcuts/static/css/main.de1723dc.css",
-    "main.js": "/mario-kart-shortcuts/static/js/main.55ca15b3.js",
+    "main.js": "/mario-kart-shortcuts/static/js/main.f7538430.js",
     "index.html": "/mario-kart-shortcuts/index.html",
     "main.de1723dc.css.map": "/mario-kart-shortcuts/static/css/main.de1723dc.css.map",
-    "main.55ca15b3.js.map": "/mario-kart-shortcuts/static/js/main.55ca15b3.js.map"
+    "main.f7538430.js.map": "/mario-kart-shortcuts/static/js/main.f7538430.js.map"
   },
   "entrypoints": [
     "static/css/main.de1723dc.css",
-    "static/js/main.55ca15b3.js"
+    "static/js/main.f7538430.js"
   ]
 }
