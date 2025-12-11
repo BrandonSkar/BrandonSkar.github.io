@@ -22,7 +22,7 @@ export const WS_shortcuts = {
 		{
 			id: "flap-wall-jump",
 			title: "flap Wall Jump",
-			description: "A set up for a quick flap time",
+			description: "A set up for a flap time",
 			steps: [
 				{
 					title: "TIP: Bowser isn't required but makes it much easier"
@@ -47,6 +47,49 @@ export const WS_shortcuts = {
 					title: "Shroom into the wall, hit the wall once to get bounced back and then jump when you hit the wall again\n" +
 					"TIP: If you try to jump over while your shroom is active you will most likely tumble",
 				}
+			]
+		},
+		{
+			id: "quick-flap",
+			title: "Quick flap",
+			description: "A set up for a quick flap time\n" +
+			"NOTE: Requires Bowser",
+			steps: [
+				{
+					title: "Pick Bowser"
+				},
+				{
+					title: "Go to the other side of the wall"
+				},
+				{
+					title: "Line up with the ghost, The finish line should be at the middle or just left of the middle of the 3 in \"LAP 1/3\"\n" +
+					"And you should be looking at the middle of the 2nd red arrow right of the finish line\n" +
+					"NOTE: There's a lot of different positions so it doesn't have to be perfect",
+					images: [
+						`${process.env.PUBLIC_URL}/assets/images/WS/quick-flap.png`
+					],
+				},
+				{
+					title: "Hold A and slowly accelerate towards the wall"
+				},
+				{
+					title: "Jump a frame before you hit the wall (Not right when you hit the wall)",
+				},
+				{
+					title: "Press Z when you hit the ground. Run into the wall, you'll get bounced back and when you hit the wall again Press R\n"+
+					"TIP: It's easier to land if you back up a few frames but a little slower",
+
+				}
+			],
+			resources: [
+				{
+					label: "flap Ghost",
+					link: "https://discord.com/channels/692171166034427916/1117106342784671784/1243006187507679263"
+				},
+				{
+					label: "Converter for EverDrive / DexDrive",
+					link: "https://beckabney.com/mk64/mempak.php"
+				},
 			]
 		},
 	],
