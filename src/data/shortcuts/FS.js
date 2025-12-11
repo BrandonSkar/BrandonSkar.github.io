@@ -57,7 +57,7 @@ export const FS_shortcuts = {
 					link: "https://beckabney.com/mk64/mempak.php"
 				},
 				{
-					label: "Setup Ghost Video",
+					label: "How To Set Up Ghost Video",
 					link: "https://discord.com/channels/692171166034427916/1117106342784671784/1394296688931508294"
 				}
 			]

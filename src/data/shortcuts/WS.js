@@ -1,5 +1,3 @@
-// TODO: Make tutorial on the quick flap
-
 export const WS_shortcuts = {
 	na: [
 		{
@@ -59,7 +57,8 @@ export const WS_shortcuts = {
 					title: "Pick Bowser"
 				},
 				{
-					title: "Go to the other side of the wall"
+					title: "Jump over the wall at the last hill from the start" +
+					"You have to jump over at the last hill or you won't trigger the lap when you tumble on the wall",
 				},
 				{
 					title: "Line up with the ghost, The finish line should be at the middle or just left of the middle of the 3 in \"LAP 1/3\"\n" +
@@ -73,7 +72,7 @@ export const WS_shortcuts = {
 					title: "Hold A and slowly accelerate towards the wall"
 				},
 				{
-					title: "Jump a frame before you hit the wall (Not right when you hit the wall)",
+					title: "Jump a frame BEFORE you hit the wall (Not right when you hit the wall)",
 				},
 				{
 					title: "Press Z when you hit the ground. Run into the wall, you'll get bounced back and when you hit the wall again Press R\n"+

@@ -1,5 +1,3 @@
-// TODO: Do wall jump
-
 export const RRy_shortcuts = {
 	na: [
 		{
